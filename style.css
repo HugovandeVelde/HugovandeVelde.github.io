@@ -1,7 +1,9 @@
-p {
+body {
     color:red;
 }
 
-h1 {
-    color:red;
+nav {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
