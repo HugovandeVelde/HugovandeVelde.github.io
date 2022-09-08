@@ -7,13 +7,24 @@ nav {
     color: green;
 }
 
-ol {
+ul {
     list-style-type: square;
     display: inline-block;
     text-align: left;
 }
 
-li {
+ol {
+    display: inline-block;
+    text-align: center;  
+}
+
+ul.nav {
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+}
+
+li.nav {
     display: inline;
     border-right: 1px solid #bbb;
 }
@@ -26,21 +37,24 @@ nav {
     background-color: #dddddd;
   }
 
-li a {
-    display: inline-block;
-    padding: 5px;
-    background-color: #dddddd;
+li a.nav {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   }
 
-li a:hover {
+li.nav a:hover {
     background-color: rgba(17, 17, 17, 0.177);
   }
 
 .active {
-    background-color: #04AA6D;
+    font-weight: bold;
   }
 
-li:last-child {
+li:last-child.nav {
     border-right: none;
   }
+
+
 
