@@ -7,8 +7,33 @@ nav {
     color: green;
 }
 
-ul {
+ol {
     list-style-type: square;
     display: inline-block;
     text-align: left;
 }
+
+li {
+    display: inline;
+    
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+  }
+
+li a {
+    display: inline-block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+li a:hover {
+    background-color: rgba(17, 17, 17, 0.177);
+  }
+  
+
