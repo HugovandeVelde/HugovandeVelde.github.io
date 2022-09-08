@@ -53,5 +53,16 @@ li.nav a:hover {
     background-color: rgba(17, 17, 17, 0.177);
   }
 
+.wrapper .sidebar{
+    background-color: #c7c6c6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
 
 
