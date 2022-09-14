@@ -1,6 +1,11 @@
+html, body {
+  color: #1e1e1e;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: #5FBB97;
 }
 
 nav {
@@ -8,7 +13,9 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #dddddd;
+    background-color: #1E3B30;
+    color: white;
+    outline: none;
   }
 
 ul {
@@ -35,7 +42,8 @@ ul.nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #dddddd;
+    background-color: #1E3B30;
+    color: white;
   }
   
 li.nav {
@@ -54,7 +62,7 @@ li.nav a:hover {
   }
 
 .wrapper .sidebar{
-    background-color: #c7c6c6;
+    background-color: #3E7A63;
     position: fixed;
     top: 0;
     left: 0;
@@ -69,12 +77,12 @@ li.nav a:hover {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #aaaaaa;
 }
 
 .faq-heading{
@@ -89,11 +97,11 @@ flex-direction: column;
 .hr-line{
 width: 60%;
 margin: auto;
+border-color: black;
 
 }
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
-  /* background-color: #eee; */
   color: #444;
   cursor: pointer;
   padding: 30px 20px;
@@ -113,12 +121,12 @@ margin: auto;
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
-  background-color: #F9F9F9;
+  background-color: #65C7A2;
 }
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
   padding: 0 18px;
-  background-color: white;
+  background-color: #5FBB97;
   display: none;
   overflow: hidden;
 }
@@ -171,3 +179,39 @@ table {
   width: 60%;
   margin: auto;
 }
+
+.progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 68%; }
+}
+
+a:link, a:visited {
+  color: #EEEEFF;
+}
+
+.blog-container a {
+  color: black;
+}
+
+
