@@ -1,76 +1,77 @@
-html, body {
+html,
+body {
   color: #1e1e1e;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #5FBB97;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #5FBB97;
 }
 
 nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1E3B30;
-    color: white;
-    outline: none;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1E3B30;
+  color: white;
+  outline: none;
+}
 
 ul {
-    list-style-type: square;
-    display: inline-block;
-    text-align: left;
+  list-style-type: square;
+  display: inline-block;
+  text-align: left;
 }
 
 ol {
-    display: inline-block;
-    text-align: center;  
+  display: inline-block;
+  text-align: center;
 }
 
 .actief {
-    font-weight: bold;
-  }
+  font-weight: bold;
+}
 
 li:last-child.nav {
-    border-right: none;
-  }
+  border-right: none;
+}
 
 ul.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1E3B30;
-    color: white;
-  }
-  
-li.nav {
-    float: left;
-  }
-  
-li.nav a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-li.nav a:hover {
-    background-color: rgba(17, 17, 17, 0.177);
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1E3B30;
+  color: white;
+}
 
-.wrapper .sidebar{
-    background-color: #3E7A63;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 225px;
-    height: 100%;
-    padding: 20px 10px;
-    font-size: 20px;
-    display: block;
+li.nav {
+  float: left;
+}
+
+li.nav a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.nav a:hover {
+  background-color: rgba(17, 17, 17, 0.177);
+}
+
+.wrapper .sidebar {
+  background-color: #3E7A63;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 10px;
+  font-size: 20px;
+  display: block;
 }
 
 .sidebar a {
@@ -85,21 +86,24 @@ li.nav a:hover {
   color: #aaaaaa;
 }
 
-.faq-heading{
+.faq-heading {
   border-bottom: #777;
   padding: 20px 60px;
 }
-.faq-container{
-display: flex;
-justify-content: center;
-flex-direction: column;
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.hr-line{
-width: 60%;
-margin: auto;
-border-color: black;
+
+.hr-line {
+  width: 60%;
+  margin: auto;
+  border-color: black;
 
 }
+
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
   color: #444;
@@ -111,18 +115,21 @@ border-color: black;
   transition: 0.4s;
   margin: auto;
 }
-.faq-body{
+
+.faq-body {
   margin: auto;
   /* text-align: center; */
- width: 50%; 
- padding: auto;
- 
+  width: 50%;
+  padding: auto;
+
 }
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
   background-color: #65C7A2;
 }
+
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
   padding: 0 18px;
@@ -130,6 +137,7 @@ border-color: black;
   display: none;
   overflow: hidden;
 }
+
 .faq-page:after {
   content: '\02795';
   /* Unicode character for "plus" sign (+) */
@@ -138,6 +146,7 @@ border-color: black;
   float: right;
   margin-left: 5px;
 }
+
 .active:after {
   content: "\2796";
   /* Unicode character for "minus" sign (-) */
@@ -147,7 +156,7 @@ border-color: black;
   background-color: #F9F9F9;
 }
 
-div.blogpost { 
+div.blogpost {
   width: 100%;
   margin: auto;
 }
@@ -170,7 +179,9 @@ a.linkje {
   width: 60%;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid;
   border-collapse: collapse;
 }
@@ -181,7 +192,7 @@ table {
 }
 
 .progress {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   justify-content: flex-start;
   border-radius: 100px;
   align-items: center;
@@ -190,6 +201,8 @@ table {
   display: flex;
   height: 40px;
   width: 500px;
+  margin: auto;
+  text-align: center;
 }
 
 .progress-value {
@@ -202,11 +215,17 @@ table {
 }
 
 @keyframes load {
-  0% { width: 0; }
-  100% { width: 68%; }
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: calc(30/60*100%);
+  }
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: #EEEEFF;
 }
 
@@ -214,4 +233,8 @@ a:link, a:visited {
   color: black;
 }
 
-
+.progressionvalue {
+  display: block;
+  position: absolute;
+  left: 47%;
+}
