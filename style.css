@@ -61,7 +61,6 @@ li.nav a:hover {
     width: 225px;
     height: 100%;
     padding: 20px 10px;
-    transition: all 0.5s ease;
     font-size: 20px;
     display: block;
 }
@@ -136,5 +135,29 @@ margin: auto;
   /* Unicode character for "minus" sign (-) */
 }
 
+.blog-page:hover {
+  background-color: #F9F9F9;
+}
 
+div.blogpost { 
+  width: 100%;
+  margin: auto;
+}
 
+.blog-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+
+a.linkje {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
