@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mijn Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" type="image/x-icon" href="fotos/favicon.ico">
+    <script type="text/javascript" src="sidebar.js"></script>
 </head>
 
 <nav>
@@ -30,9 +32,10 @@
     </ul>
 </nav>
 
-<div class="wrapper">
+<div class="wrapper" id="mySidebar">
     <!--Top menu -->
-    <div class="sidebar">
+    <div class="sidebar" >
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
         <a href="https://hz.nl/" target="_blank">
             <img src="fotos/hz-logo.png" alt="HZ logo"> <br><br>
         </a>
@@ -56,6 +59,8 @@
 
 <body>
     <h1>Dashboard</h1>
+
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
 
     <section>
         <table>
@@ -148,6 +153,7 @@
         <p>NBSA grens: 45 EC</p>
 
     </section>
+    <script src="sidebar.js"></script>
 </body>
 
 </html>
