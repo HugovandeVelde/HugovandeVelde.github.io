@@ -8,6 +8,7 @@
     <title>Mijn Blog</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="fotos/favicon.ico">
+    <script type="text/javascript" src="sidebar.js"></script>
 </head>
 
 <nav>
@@ -32,7 +33,8 @@
 
 <div class="wrapper">
     <!--Top menu -->
-    <div class="sidebar">
+    <div class="sidebar" id="mySidebar">
+        <button onclick="w3_close()">Close &times;</button>
         <a href="https://hz.nl/" target="_blank">
             <img src="fotos/hz-logo.png" alt="HZ logo"> <br><br>
         </a>
@@ -55,6 +57,7 @@
 </div>
 
 <body>
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
     <h1 class="blog-heading">Mijn Blog</h1>
     <section class="blog-container">
 
